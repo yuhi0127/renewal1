@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+      <meta name="format-detection" content="telephone=no, address=no, email=no;">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+      <link rel="apple-touch-icon" sizes="76x76" href="favicon_package_v0.16/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+      <!-- <link rel="manifest" href="favicon_package_v0.16/site.webmanifest"> -->
+      <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+      <title>MSI Korea Renewal</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script src="js/script.js"></script>
+   </head>
+   <body>
+      <header id="main_header">
+         <h1>
+            <a href="https://kr.msi.com/index.php" target="(_blank)">MSI 로고</a>
+         </h1>
+         <button type="button" id="toggle">
+            <span class="bar1"></span><span class="bar2"></span><span class="bar3"></span><span class="sr_only">전체메뉴</span>
+         </button>
+         <nav class="tnb">
+            <ul>
+               <li class="account">
+                  <a href="https://account.msi.com/login">계정정보</a>
+               </li>
+               <li class="join">
+                  <a href="#">회원가입</a>
+               </li>
+               <li class="search">
+                  <a href="#">검색</a>
+               </li>
+               <li class="darkmode">
+                  <a href="#"><div class="sun">다크모드 아이콘</div></a>
+               </li>
+            </ul>
+         </nav>
+
+         <nav class="gnb">
+            <ul>
+               <li>
+                  <a href="#">우리 MSI는</a>
+                  <ul class="sub">
+                     <li><a href="https://www.msi.com/about">About MSI</a></li>
+                     <li><a href="https://www.msi.com/about/brandStory">기업이야기</a></li>
+                     <li><a href="https://www.msi.com/about/contact-us">Contact us</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">제품 안내</a>
+                  <ul class="sub">
+                     <li><a href="https://kr.msi.com/Motherboards/">메인보드</a></li>
+                     <li><a href="https://kr.msi.com/Monitors">모니터</a></li>
+                     <li><a href="https://kr.msi.com/Desktops">데스크탑</a></li>
+                     <li><a href="https://kr.msi.com/Laptops/">노트북</a></li>
+                     <li><a href="https://kr.msi.com/Graphics-Cards/">그래픽카드</a></li>
+                     <li><a href="https://kr.msi.com/Gaming-Gear/">주변기기</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">MSI 뉴스</a>
+                  <ul class="sub">
+                     <li><a href="https://kr.msi.com/blogs">관련 뉴스</a></li>
+                     <li><a href="https://kr.msi.com/events?type=&country=&audience=&span=future">이벤트 일정</a></li>
+                     <li><a href="https://kr.msi.com/Promotions">할인행사</a></li>
+                     <li><a href="https://www.msi.com/events?type=all&country=global&audience=all&span=future">출시예정</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">고객 지원</a>
+                  <ul class="sub">
+                     <li><a href="https://kr.msi.com/support/download">다운로드</a></li>
+                     <li><a href="https://account.msi.com/login">제품 등록</a></li>
+                     <li><a href="https://kr.msi.com/page/warranty">품질 보증</a></li>
+                     <li><a href="https://kr.msi.com/support"> 고객 서비스</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">외부 후원</a>
+                  <ul class="sub">
+                     <li><a href="https://csr.msi.com/global/index">CSR</a></li>
+                     <li><a href="https://www.msi.com/Gaming-Team">E-SPORT</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">미디어</a>
+                  <ul class="sub">
+                     <li><a href="https://www.msi.com/page/brochure">Brochure</a></li>
+                     <li><a href="https://www.msi.com/wallpaper">Wallpaper</a></li>
+                     <li><a href="https://kr.msi.com/page/msi-apps">MSI App</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </nav>
+
+         <div class="sub_bg desktop"></div>
+      </header>
+
+      <div id="join_form">
+         <div class="join_wrap">
+            <h2>지금 가입하세요</h2>
+            <p>MSI 회원가입을 하려면 다음 방법을 사용하십시오</p>
+            <ul>
+               <li class="mail">
+                  <a href="https://account.msi.com/register" class="mail">전자메일로 등록</a>
+               </li>
+               <li class="facebook">
+                  <a href="https://account.msi.com/login/facebook">Facebook 계정으로 등록</a>
+               </li>
+               <li class="google">
+                  <a href="https://account.msi.com/login/google">Google 계정으로 등록</a>
+               </li>
+               <li class="apple">
+                  <a href="https://account.msi.com/login/apple">Apple 계정으로 등록</a>
+               </li>
+               <li class="twitch">
+                  <a href="https://account.msi.com/login/twitch">Twitch 계정으로 등록</a>
+               </li>
+            </ul>
+            <button type="button" class="close">닫기</button>
+         </div>
+      </div>
+
+      <div id="search_form">
+         <form action="#" method="post">
+            <input type="search" name="search" id="searchbox" placeholder="검색어를 입력하세요.">
+            <button type="submit" name="search">검색</button>
+         </form>
+         <button type="button" class="close">닫기</button>
+      </div>
+
+      <section id="main_visual">
+         <div class="swiper">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide box1">
+                  <img src="img/banner_01_desktop.jpg" alt="warranty">
+                  <a href="https://kr.msi.com/page/warranty/nb" class="more">더보기</a>
+               </div>
+               <div class="swiper-slide box2">
+                  <div class="innerbox">
+                     <div class="img">
+                        <img src="img/banner_02.png" alt="MSI RAIDER GE78 HX 13V">
+                     </div>
+                     <div class="text">
+                        <p>MSI RAIDER<br>GE78 HX 13V</p>
+                     </div>
+                  </div>
+                  <a href="https://kr.msi.com/Laptop/Raider-GE78-HX-13VX" class="more">더보기</a>
+               </div>
+               <div class="swiper-slide box3">
+                  <div class="innerbox">
+                     <div class="img">
+                        <img src="img/banner_03.png" alt="MEG Z790 ACE">
+                     </div>
+                     <div class="text">
+                        <p>MEG<br>Z790 ACE</p>
+                     </div>
+                  </div>
+                  <a href="https://kr.msi.com/Motherboard/MEG-Z790-ACE" class="more">더보기</a>
+               </div>
+               <div class="swiper-slide box4">
+                  <div class="innerbox">
+                     <div class="img">
+                        <img src="img/banner_04.png" alt="GeForce RTX 4090 SUPRIM x 24G">
+                     </div>
+                     <div class="text">
+                        <p>GeForce RTX 4090<br>SUPRIM X 24G</p>
+                     </div>
+                  </div>
+                  <a href="https://kr.msi.com/Graphics-Card/GeForce-RTX-4090-SUPRIM-X-24G" class="more">더보기</a>
+               </div>
+               <div class="swiper-slide box5">
+                  <div class="innerbox">
+                     <div class="img">
+                        <img src="img/banner_05.png" alt="MEG Ai1300P PCIE5">
+                     </div>
+                     <div class="text">
+                        <p>MEG<br>Ai1300P PCIE5</p>
+                     </div>
+                  </div>
+                  <a href="https://kr.msi.com/Power-Supply/MEG-Ai1300P-PCIE5" class="more">더보기</a>
+               </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+         </div>
+      </section>
+
+      <section id="promotion">
+         <div class="title">
+            <p>
+               <span class="graphic">그래픽 카드</span>
+               <br class="mobile"><span class="special">특별 이벤트</span>
+            </p>
+            <img src="img/promotion_steam.png" alt="스팀코드 할인 정보">
+         </div>
+
+         <div class="wrap">
+            <div class="target">
+               <h2>신청대상</h2>
+               <div class="content">
+                  <div class="vgaImg"></div>
+                  <div class="list">
+                     <ul>
+                        <li>
+                           <a href="img/promotion_Radeon6800_XT.png">라데온 RX6000 Series</a>
+                        </li>
+                        <li>
+                           <a href="img/promotion_RTX3060.png">지포스 RTX3000 Series</a>
+                        </li>
+                        <li>
+                           <a href="img/promotion_RTX4070.png">지포스 RTX4000 Series</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+            <div class="method">
+               <h2>신청방법</h2>
+               <ul class="content">
+                  <li>MSI 멤버 센터를 통해 <span>신청서 제출</span></li>
+                  <li>
+                     이벤트 대상 제품 등록 후 <span>요청 자료 업로드</span>
+                  </li>
+                  <li>
+                     모든 정보가 올바른지 <span>확인 후 제출.</span> <br class="desktop mobile">청구가 승인 되면 <span>이메일로 경품 안내</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+
+      <section id="items">
+         <div class="items_wrap">
+            <div id="mainboard">
+               <div class="img">
+                  <img src="img/items_mainboard.png" alt="MPG-Z790-carbon-wifi">
+               </div>
+               <div class="text">
+                  <ul>
+                     <li>LGA 1700소켓 지원</li>
+                     <li>최대 7800MHz의 DDR5 메모리 지원 <br class="desktop tablet">(오버클럭 시)</li>
+                     <li>PCIe 5.0 슬롯</li>
+                     <li>Lightning Gen 5 x4 M.2</li>
+                     <li>향상된 쿨링</li>
+                     <li>메모리 부스트</li>
+                     <li>2.5G LAN 및 Intel Wi-Fi 6E</li>
+                     <li>AUDIO BOOST 5</li>
+                  </ul>
+               </div>
+            </div>
+
+            <div id="monitor">
+               <div class="img">
+                  <img src="img/items_monitor.png" alt="Optix MPG321UR-QD">
+               </div>
+               <div class="text">
+                  <ul>
+                     <li>IPS 패널</li>
+                     <li>99% Adobe RGB, 97% DCI-P3 <br class="desktop tablet"> 및 82% Rec.2020</li>
+                     <li>144Hz UHD 1ms</li>
+                     <li>G-Sync지원</li>
+                     <li>HDR 600</li>
+                  </ul>
+               </div>
+            </div>
+
+            <div id="desktop">
+               <div class="img">
+                  <img src="img/items_dekstop.png" alt="MEG Aegis Ti5 12th">
+               </div>
+               <div class="text">
+                  <ul>
+                     <li>Intel&reg; Core&trade; i9-12900K</li>
+                     <li>DDR5 memory</li>
+                     <li>MSI GeForce RTX&trade; 3090</li>
+                     <li>PCIe 5.0지원</li>
+                     <li>2.5G + 1G 듀얼랜 및 Intel Wi-Fi 6E</li>
+                  </ul>
+               </div>
+            </div>
+
+            <div id="laptop">
+               <div class="img">
+                  <img src="img/items_laptop.png" alt="Raider GE77 HX - 12U">
+               </div>
+               <div class="text">
+                  <ul>
+                     <li>Intel&reg; Core&trade; i9-12900HX</li>
+                     <li>Window 11 Home / Pro</li>
+                     <li>GeForce RTX&trade; 3080 Ti 노트북 GPU 16GB GDDR6 지원</li>
+                     <li>99.9Whr 고용량 배터리</li>
+                     <li>2Fan과 7개의 히트파이프로<br class="desktop tablet">높은 쿨링능력</li>
+                  </ul>
+               </div>
+            </div>
+
+            <div id="vga">
+               <div class="img">
+                  <img src="img/items_vga.png" alt="GeForce RTX&reg; 4090 SUPRIM X 24G">
+               </div>
+               <div class="text">
+                  <ul>
+                     <li>24GB GDDR6X</li>
+                     <li>3 DP포트(v1.4a) + 1 HDMI (HDMI 2.1a)</li>
+                  </ul>
+               </div>
+            </div>
+
+            <p class="best">대표 상품</p>
+         </div>
+
+         <div class="item_list">
+            <h2>제품군 목록</h2>
+            <ul>
+               <li><a href="https://kr.msi.com/Motherboards/">메인보드</a></li>
+               <li><a href="https://kr.msi.com/Monitors">모니터</a></li>
+               <li><a href="https://kr.msi.com/Desktops">데스크탑</a></li>
+               <li><a href="https://kr.msi.com/Laptops/">노트북</a></li>
+               <li><a href="https://kr.msi.com/Graphics-Cards/">그래픽카드</a></li>
+            </ul>
+         </div>
+      </section>
+
+      <section id="sponsor">
+         <div class="csr">
+            <div class="img">
+               <img src="img/sponsor_scr.png" alt="지구">
+            </div>
+            <div class="text">
+               <div class="title">
+                  <h2>CSR</h2>
+                  <h3>기업의 사회적 책임</h3>
+               </div>
+               <div class="content">
+                  <p>
+                     기업 이익을 사회에 환원하여 사회를 좀 더 이롭게 이용될 수
+                     있도록 하는 <span>선순환</span>
+                  </p>
+                  <p class="plus">&plus;</p>
+                  <p>
+                     지구의 환경을 위한<br><span>지속가능한 개발</span>을 추구
+                  </p>
+               </div>
+            </div>
+         </div>
+
+         <div class="esports">
+            <div class="img">
+               <img src="img/sponsor_esport_desktop.jpg" alt="MSI">
+            </div>
+            <div class="text">
+               <div class="title">
+                  <h2>E-SPORTS Partnership</h2>
+                  <h3>E-sports 파트너십</h3>
+               </div>
+               <div class="content">
+                  <p>
+                     2006년 시작으로, 현재에 이르러 전 세계 15개 이상의
+                     <span>전문 E-SPORTS팀</span>과의 파트너 계약을 맺고 있는
+                     MSI.
+                  </p>
+                  <p>
+                     <span>MSI</span>의 뛰어난 하드웨어 기술을 바탕으로 선수들은
+                     뛰어난 기록을 보여주고 있다.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="support">
+         <ul>
+            <li class="register"><a href="https://account.msi.com">제품등록</a></li>
+            <li class="custom"><a href="https://kr.msi.com/support">고객지원</a></li>
+            <li class="download"><a href="https://kr.msi.com/support#support_download">다운로드</a></li>
+         </ul>
+      </section>
+
+      <div id="TopBottom">
+         <button type="button" class="ToTop">Top</button>
+         <button type="button" class="ToBottom">Bottom</button>
+      </div>
+
+      <button type="button" id="side" class="mobile">Quick</button>
+
+      <footer id="main_footer">
+         <div class="footer_left">
+            <a href="https://kr.msi.com/index.php">msi 로고</a>
+            <p class="copyright">
+               <span>Copyright &copy; 2023</span> <span>Micro-Star INT'L CO., LTD.</span> <span>All rights reserved.</span>
+            </p>
+         </div>
+         <div class="footer_right">
+            <p>쿠키 정책</p>
+            <p>개인정보 정책</p>
+            <ul class="sns">
+               <li class="instagram"><a href="http://www.instagram.com">인스타그램</a></li>
+               <li class="facebook"><a href="http://www.facebook.com">페이스북</a></li>
+               <li class="twitter"><a href="http://www.twitter.com">트위터</a></li>
+               <li class="youtube"><a href="http://www.youtube.com">유튜브</a></li>
+               <li class="twitch"><a href="http://www.twitch.com">트위치</a></li>
+            </ul>
+         </div>
+      </footer>
+   </body>
+</html>
